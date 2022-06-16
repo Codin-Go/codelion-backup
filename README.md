@@ -1,4 +1,6 @@
-minlim@Mins-MBP bm_learn % git status
+start 
+
+minlim@Mins-MBP bm_learn % git status  
 On branch master
 
 No commits yet
