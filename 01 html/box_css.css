@@ -1,0 +1,28 @@
+.box1 {
+    border: 10px ridge; 
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    padding: 20px;
+}
+
+.box2 {
+    border: 10px ridge; 
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+}
+
+.box3 {
+    border: 10px ridge; 
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+

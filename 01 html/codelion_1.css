@@ -1,0 +1,42 @@
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
+
+p {
+    text-align: right; 
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+
+.big-font {
+    font-size: 50px;
+}
+
+.small-font {
+    font-size: 10px; 
+}
+
+.mainbody {
+    border: 1px ridge; 
+    width: 500px;
+    margin-left: auto;
+    margin-left: auto;
+    padding: 10px;
+    margin: 0px;
+}
+
+.name-text {
+    font-size: 17px;                         
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+
+/* reference 
+https://htmlcolorcodes.com */
