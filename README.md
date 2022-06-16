@@ -1,4 +1,8 @@
-start 
+1)) Prob Solv : Directory, bm_learn
+2)) Prov Solv : Source Control > Sync
+
+
+
 
 minlim@Mins-MBP bm_learn % git status  
 On branch master
