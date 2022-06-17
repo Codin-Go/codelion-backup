@@ -1,0 +1,55 @@
+Find a way
+I am looking for a treasure. I like to journey and prepare something in advance. I do love making something together. So, I think communication is important under progress with feedback. I think time is important. and I have to adhere to strict deadlines. If there is a problem, I think 'How can i solve?" 
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Codingo</title>
+  <link rel="stylesheet" href="codelion.css">
+</head>
+<body>
+  <div class="mainbox">
+    <div class="title-box">
+        <h1>Codin Go</h1>
+        <p class="name-text"> Developer</p>
+    </div>
+    <section>
+      <h2>ABOUT ME</h2>
+      <p class="about-me-text">
+      I am looking for a treasure. I like to journey and prepare something in advance. I do love making something together. So, I think communication is important under progress with feedback. I think time is important. and I have to adhere to strict deadlines. If there is a problem, I think 'How can i solve?" 
+      </p>
+    </section>
+    <section>
+        <h2>EXPERIENCE</h2>
+        <div class="float-wrap">
+          <p class="title-text"> Free-Lancer </p>
+          <p class="year-text">2022 - Now</p>
+        </div>
+        <p class="desc-text">Front-End Web Developer</p>
+        <p class="desc-subtext">HTML/CSS, JS </p>
+        <div class="float-wrap">
+          <p class="title-text">LG Display</p>
+          <p class="year-text">2015 - 2018</p>
+        </div>
+        <p class="desc-text">Mechanical/Sound Engineer</p>
+        <p class="desc-subtext">Mechanical design of OLED TV</p>
+        <p class="desc-subtext">CSO (Cinematic Sound OLED) </p>
+        </div>
+      </section>
+
+      <div class="sns-wrap">
+        <a href="http://facebook.com"><img class="sns-img" src="images/facebook.png"></a>
+        <img class="sns-img" src="images/twitter.png">
+        <img class="sns-img" src="images/linked-in.png">
+        <img class="sns-img" src="images/insta.png">
+      </div>
+  </div>
+  <footer>
+      <p>Copyright CODE LION All rights reserved. </p>
+  </footer>
+</body>
+</html>
