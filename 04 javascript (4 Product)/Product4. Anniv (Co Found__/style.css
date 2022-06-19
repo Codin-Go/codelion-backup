@@ -1,0 +1,311 @@
+* {
+    color: #333333;
+}
+p {
+    margin-bottom: 1px;
+}
+.photos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+      
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 40%;
+    height: 40%; */
+    width: 250px;
+    height: 250px;
+
+    /* border: 1px solid; */
+    text-align: center;
+  }
+
+ th, td {
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+
+#duhee {
+    width:64px;
+    height:64px;
+    /* object-fit:cover; */
+    /* border-radius:50%; */
+    /* margin-right: 30px; */
+}
+#jisook {
+    width:64px;
+    height:64px;
+    object-fit:cover;
+    /* border-radius:50%; */
+    /* margin-left: 30px; */
+}
+#heart {
+    width:50px;
+    height:50px;
+}
+.gray {
+    color: #a0a0a0;
+}
+.special-day {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.days-left {
+    text-align: right;
+}
+.date {
+    text-align: right;
+    color: #a0a0a0;
+}
+footer {
+    text-align: center;
+    /* background-color: #1e1e1e; */
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/*  */
+   
+/* Parent Container */
+.content_img{
+  position: relative;
+  width: 64px;
+  height: 64px;
+  float: left;
+  /* margin-right: 10px; */
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-top: 10%;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+  font-size: 10px;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 64px;
+  /* padding: 5px 10px; */
+  visibility: visible;
+  opacity: 0.7; 
+ }
+
+/* 
+  */
+
+/* .div2 {
+  display: none;
+  border:1px solid #000;
+  height:30px;
+  width:290px;
+  margin-left:10px;
+}
+
+a:hover + .div2 {
+    display: block;
+} */
+
+
+/* 
+ */
+/*  
+ .content_img2 {
+    display: none;
+    border:1px solid #000;
+    height:30px;
+    width:290px;
+    margin-left:10px;
+}
+
+a:hover + .content_img2 {
+    display: block;
+} */
+
+
+/* 
+ */
+
+ .app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.leftcontainer {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.rightcontainer {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.midcontainer {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* position:absolute;
+      right:0;*/
+}
+
+#TheImage {
+  transition: transform .2s;
+}
+
+/* 
+ */
+
+ /* #target { width: 100px; height: 100px; border: 1px solid #aaa; }
+
+.a { background: #000; }
+.b { background: #ff0000; }
+.c { background: #0000ff; }
+ */
+
+
+/* 
+ */
+
+ .grid {
+  /* Put 50% white space to the left of the image grid
+  which provides the space for descriptions to appear */
+  padding-left:20%;
+  
+  /* Specify a basic grid layout for images in the grid */
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 10px;
+}
+
+.grid img {
+  /* Cause each image to not exceed the grid cell's width */
+  max-width:100%;
+}
+
+.grid a p {
+  /* With width of description cannot exceed half page width. If text
+  description is too long, this causes it to wrap onto multiple lines
+  at the 50% point */
+  width:50%;
+  
+  /* Fixed position ensures the description is placed at top left of
+  screen (by default) regardless of scroll position */
+  position:fixed; 
+  top:10px;
+  left:10px;
+  
+  /* Do not show description by default */
+  display:none;
+  /* display:"display"; */
+}
+
+.grid a:hover p {
+
+  /* When hovering the a around an image, cause it's description to
+  be shown */
+  display:block;
+}
+
+
+
+/* added */
+.content_img img {
+  /* Cause each image to not exceed the grid cell's width */
+  max-width:100%;
+}
+
+.content_img a p {
+  /* With width of description cannot exceed half page width. If text
+  description is too long, this causes it to wrap onto multiple lines
+  at the 50% point */
+  width:50%;
+  
+  /* Fixed position ensures the description is placed at top left of
+  screen (by default) regardless of scroll position */
+  position:fixed; 
+  top:10px;
+  left:10px;
+  
+  /* Do not show description by default */
+  display:none;
+  /* display:"display"; */
+}
+
+.content_img a:hover p {
+
+  /* When hovering the a around an image, cause it's description to
+  be shown */
+  display:block;
+}

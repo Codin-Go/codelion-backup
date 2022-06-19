@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script type="text/javascript" src="script.js"></script>
+    <title>Founded </title>
+</head>
+
+<body class="container">
+    <section class = 'photos' >
+        <table >
+            <tr>
+                <th>
+                    <div class="content_img">
+                        <img src='2222.SR.webp'>
+                        <div>Saudi Aramco</div>
+                    </div>                    
+                </th>
+                <th>
+                    <div class="content_img">
+                        <img src='AAPL.webp'>
+                        <div>Apple</div>
+                    </div>
+                </th>
+                <th>
+                    <div class="content_img">
+                        <img src='MSFT.webp'>
+                        <div>Microsoft</div>
+                    </div>
+                </th>
+            </tr>
+    
+            <tr>
+                <td>
+                    <div class="content_img">
+                        <img src='GOOG.webp'>
+                        <div>Alphabet (Google)</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="content_img">
+                        <img src='AMZN.webp'>
+                        <div>Amazon</div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="content_img">
+                        <img src='TSLA.webp'>
+                        <div>Tesla</div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr id="line3">
+                <td>
+                    <div class="content_img">
+                        <img src='BRK-B.webp'>
+                        <div>Berkshire Hathaway</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="content_img">
+                        <img src='TCEHY.webp'>
+                        <div>Tencent</div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="content_img">
+                        <img src='download.png'>
+                        <div>Next</div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+
+    </section>      
+
+<div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
+        <h3> Market Cap</h3>
+        <h4 class="date">Jun 19, 2022</h4>
+        
+    </div>
+    <hr/>
+    <section class='special-day'>
+        <!-- <h3 class='title'>Founded <br> (Apple)</h3> -->
+        <!-- <h3 class='title'>Founded <br> (Google)</h3> -->
+        <h3 class='title'>Founded</h3>
+        
+        <div class='date-box'>
+            <!-- <p class='date'>1933.5.29</p>   -->
+            <!-- <p class='date'>1976.4.1</p>   -->
+            <p class='date'>1998.11.4</p>  
+            <h4 id='love'>0일째</h4>
+        </div>
+    </section>
+    <hr/>
+    <section class='special-day'>
+        <h3 class='title'>D-Day</h3>
+        <div class='date-box'>
+            <p class='date'>2022.9.5</p>  
+            <h4 id='love3'>0일째</h4>
+
+
+        </div>
+    </section>
+    <hr/>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <script>
+        // let text = "John Doe";  // String written inside quotes
+        // document.getElementById("demo").innerHTML = text;
+
+        var now = new Date();
+
+        var start_found = new Date('1933-05-29');
+        var start_found = new Date('1998-11-04');
+        var start_sus = new Date('2022-09-05');
+
+        //우리 몇 일째? -> 몇 년째 
+        var timeDiff = now.getTime() - start_found.getTime();
+        var timeDiff2 = now.getTime() - start_sus.getTime() ;
+
+
+        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) / 365 + 1);
+        $('#love').text('Y+' + day);
+
+        var day = Math.floor( timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#love2').text('D-' + -day );
+
+
+        var day = Math.floor( timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#love3').text('D-' + -day );
+
+    </script>
+  <footer>
+    <p>    © Copyright 2022 Codingo </p>
+</footer>
+
+
+</body>
+</html>

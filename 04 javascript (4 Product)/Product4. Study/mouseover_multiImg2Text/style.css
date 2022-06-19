@@ -1,0 +1,39 @@
+.grid {
+    /* Put 50% white space to the left of the image grid
+    which provides the space for descriptions to appear */
+    padding-left:20%;
+    
+    /* Specify a basic grid layout for images in the grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .grid img {
+    /* Cause each image to not exceed the grid cell's width */
+    max-width:100%;
+  }
+  
+  .grid a p {
+    /* With width of description cannot exceed half page width. If text
+    description is too long, this causes it to wrap onto multiple lines
+    at the 50% point */
+    width:50%;
+    
+    /* Fixed position ensures the description is placed at top left of
+    screen (by default) regardless of scroll position */
+    position:fixed;
+    top:10px;
+    left:10px;
+    
+    /* Do not show description by default */
+    display:none;
+    /* display:"display"; */
+  }
+  
+  .grid a:hover p {
+  
+    /* When hovering the a around an image, cause it's description to
+    be shown */
+    display:block;
+  }
